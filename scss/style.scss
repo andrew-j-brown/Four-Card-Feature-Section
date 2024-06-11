@@ -6,10 +6,10 @@ $red: hsl(0, 78%, 62%);
 $cyan: hsl(180, 62%, 55%);
 $orange: hsl(34, 97%, 64%);
 $blue: hsl(212, 86%, 64%);
-$red-shadow: hsla(0, 78%, 62%, 20%);
-$cyan-shadow: hsla(180, 62%, 55%, 20%);
-$orange-shadow: hsla(34, 97%, 64%, 20%);
-$blue-shadow: hsla(212, 86%, 64%, 20%);
+$red-shadow: hsla(0, 78%, 62%, 35%);
+$cyan-shadow: hsla(180, 62%, 55%, 35%);
+$orange-shadow: hsla(34, 97%, 64%, 35%);
+$blue-shadow: hsla(212, 86%, 64%, 35%);
 
 $very-dark-blue: hsl(234, 12%, 34%);
 $grayish-blue: hsl(229, 6%, 66%);
@@ -69,20 +69,22 @@ p {
     display: flex;
     flex-direction: column;
 
-    background-color: $very-light-gray;
-    box-shadow: 7px 9px 22px 12px rgba(0,0,0,0.1);
+    background-color: white;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
     transition: 0.2s box-shadow;
 
     border-radius: 0.4rem;
 
     h2 {
         font-size: 1.5rem;
+        font-weight: 500;
         margin-bottom: 0.5rem;
     }
 
     p {
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
         font-size: 0.92rem;
+        line-height: 1.5;
     }
 
     img {
@@ -97,7 +99,7 @@ p {
 }
 
 .card-supervisor:hover {
-    box-shadow: 7px 9px 22px 12px $cyan-shadow;
+    box-shadow: 0px 10px 15px -3px $cyan-shadow;
 }
 
 .card-team-builder {
@@ -105,7 +107,7 @@ p {
 }
 
 .card-team-builder:hover {
-    box-shadow: 7px 9px 22px 12px $red-shadow;
+    box-shadow: 0px 10px 15px -3px $red-shadow;
 }
 
 .card-karma {
@@ -113,7 +115,7 @@ p {
 }
 
 .card-karma:hover {
-    box-shadow: 7px 9px 22px 12px $orange-shadow;
+    box-shadow: 0px 10px 15px -3px $orange-shadow;
 }
 
 .card-calculator {
@@ -121,10 +123,14 @@ p {
 }
 
 .card-calculator:hover {
-    box-shadow: 7px 9px 22px 12px $blue-shadow;
+    box-shadow: 0px 10px 15px -3px $blue-shadow;
 }
 
 @media (max-width: 1199px) {
+    h1, h2 {
+        font-size: 1.6rem;
+    }
+
     .card-container {
         display: grid;
         grid-template-areas:
@@ -153,6 +159,10 @@ p {
 }
 
 @media (min-width: 1200px) {
+    h1, h2 {
+        font-size: 2.5rem;
+    }
+
     .card-container {
         display: grid;
         grid-template-areas:
