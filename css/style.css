@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: hsl(0, 0%, 98%);
-  padding: 2rem;
+  padding: 4rem 0;
 }
 
 h1, h2 {
@@ -46,7 +46,7 @@ p {
   flex-direction: column;
   background-color: hsl(0, 0%, 98%);
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  border-radius: 0.5rem;
+  border-radius: 0.4rem;
 }
 .card h2 {
   font-size: 1.5rem;
@@ -60,6 +60,62 @@ p {
   height: auto;
   width: 4rem;
   align-self: end;
+}
+
+.card-supervisor {
+  border-top: 0.4rem solid hsl(180, 62%, 55%);
+}
+
+.card-team-builder {
+  border-top: 0.4rem solid hsl(0, 78%, 62%);
+}
+
+.card-karma {
+  border-top: 0.4rem solid hsl(34, 97%, 64%);
+}
+
+.card-calculator {
+  border-top: 0.4rem solid hsl(212, 86%, 64%);
+}
+
+@media (max-width: 990px) {
+  .card-container {
+    display: grid;
+    grid-template-areas: "middle-col-a" "middle-col-b" "middle-col-c" "middle-col-d";
+    grid-gap: 2rem;
+  }
+  .card-supervisor {
+    grid-area: middle-col-a;
+  }
+  .card-team-builder {
+    grid-area: middle-col-b;
+  }
+  .card-karma {
+    grid-area: middle-col-c;
+  }
+  .card-calculator {
+    grid-area: middle-col-d;
+  }
+}
+@media (min-width: 991px) {
+  .card-container {
+    display: grid;
+    grid-template-areas: "left-col-a middle-col-a right-col-a" "left-col-a middle-col-b right-col-a";
+    grid-gap: 2rem;
+    align-items: center;
+  }
+  .card-supervisor {
+    grid-area: left-col-a;
+  }
+  .card-team-builder {
+    grid-area: middle-col-a;
+  }
+  .card-karma {
+    grid-area: middle-col-b;
+  }
+  .card-calculator {
+    grid-area: right-col-a;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
