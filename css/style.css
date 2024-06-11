@@ -23,6 +23,10 @@ h1, h2 {
   cursor: default;
 }
 
+h1 {
+  font-weight: 500;
+}
+
 p {
   color: hsl(229, 6%, 66%);
   cursor: default;
@@ -38,7 +42,7 @@ p {
 }
 
 .container-hero--thin {
-  font-weight: 300;
+  font-weight: 200;
 }
 
 .card {
@@ -52,13 +56,13 @@ p {
   border-radius: 0.4rem;
 }
 .card h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
 .card p {
   margin-bottom: 3rem;
-  font-size: 0.92rem;
+  font-size: 0.85rem;
   line-height: 1.5;
 }
 .card img {
